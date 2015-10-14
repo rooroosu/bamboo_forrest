@@ -1,0 +1,8 @@
+.box.panel.panel-default
+	.panel-body
+		%p= @post.content
+
+.col-md-12
+	.btn-group.pull-right
+		= link_to 'Edit', edit_post_path, class: 'btn btn-default'
+		= link_to 'Delete', post_path(@post), method: :delete, data: {confirm: "Are you sure?"}, class: 'btn btn-default'

@@ -1,0 +1,6 @@
+= simple_form_for(@post, html: { class: 'form-horizontal'}) do |f|
+	.form-group
+	= f.input :content, input_html: {class: 'form-control'}
+	%br/
+
+	= f.button :submit, class: 'btn btn-default'

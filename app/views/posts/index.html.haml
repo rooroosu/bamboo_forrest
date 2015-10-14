@@ -1,0 +1,6 @@
+- @posts.each do |post|
+	.box.panel.panel-default
+		.panel-body
+			%p= link_to post.content, post
+		.panel-footer
+			%p= post.created_at.localtime.strftime('%A %B %d %I:%M %p')
