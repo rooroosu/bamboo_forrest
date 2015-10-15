@@ -9,8 +9,16 @@
 %body
 	%nav.navbar.navbar-default
 		.container
-			.navbar-brand= link_to "대나무 숲", root_path
-			%ul.nav.navbar-nav.navbar-right
-				%li= link_to "새 포스트", new_post_path
+			.navbar-header
+				%button.navbar-toggle.collapsed{"aria-controls" => "navbar", "aria-expanded" => "false", "data-target" => "#navbar", "data-toggle" => "collapse", :type => "button"}
+					%span.sr-only Toggle Navigation
+					%span.icon-bar
+					%span.icon-bar
+					%span.icon-bar
+				.navbar-brand
+					= link_to "대나무 숲", root_path
+			#navbar.navbar-collapse.collapse
+				%ul.nav.navbar-nav.navbar-right
+					%li= link_to "새 포스트", new_post_path
 	.container
 		= yield
