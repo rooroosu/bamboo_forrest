@@ -1,0 +1,8 @@
+.comment.clearfix
+  .comment_content
+    %p.comment_body= comment.body
+    %p.comment_time
+      = time_ago_in_words(comment.created_at)
+      Ago
+  %p= link_to 'Delete', [comment.post, comment], method: :delete, class: 'btn btn-default pull-right', data: {confirm: "Are you sure?"}
+

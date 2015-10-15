@@ -1,0 +1,5 @@
+= simple_form_for([@post, @post.comments.build],  tml: { class: 'form-horizontal'}) do |f|
+	.form-group
+		= f.input :body
+	%br/
+	= f.button :submit
