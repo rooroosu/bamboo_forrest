@@ -46,12 +46,12 @@ a {
 	}
 }
 textarea {
-	min-height: 250px;
+	min-height: 200px;
 }
 
 #comments {
 		width: 100%;
-
+		margin-bottom: 50px;
 		h2 {
 			margin: 3em 0 1em 0;
 			border-bottom: 1px solid #d6dce0;
@@ -90,8 +90,9 @@ textarea {
 			}
 		}
 		input[type="text"], textarea {
-			width: 50%;
+			width: 100%;
 		}
+		
 	}
 
 .clearfix:after {
